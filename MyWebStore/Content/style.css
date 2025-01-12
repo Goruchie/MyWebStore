@@ -1,0 +1,12 @@
+﻿body {
+}
+.storeLogo {
+    height: 30px;
+    width: auto;
+    margin-right: 5px;
+    
+}
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+}
