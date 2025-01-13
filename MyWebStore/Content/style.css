@@ -1,12 +1,39 @@
 ﻿body {
 }
+
 .storeLogo {
     height: 30px;
     width: auto;
-    margin-right: 5px;
-    
+    margin-right: 10px;
 }
+
+.userLogo {
+    height: 30px;
+    width: auto;
+}
+
 .navbar-brand {
     display: flex;
     flex-direction: row;
 }
+
+.btnCatalog, .btnFavorites {
+    background-color: transparent;
+    margin: 0;
+    border: none;
+}
+
+.nav-link.btn {
+    color: #b0b0b0; /* Color del texto no activo (gris claro) */
+    background-color: transparent; /* Fondo transparente */
+}
+
+    .nav-link.btn.active {
+        color: #ffffff !important; /* Color del texto activo (blanco) */
+        background-color: transparent !important; /* Fondo transparente */
+        font-weight: bold; /* Texto en negrita */
+    }
+
+    .nav-link.btn:hover {
+        color: #d0d0d0; /* Color del texto al pasar el ratón (gris más claro) */
+        background-color: transparent !important; /* Fondo transparente */
