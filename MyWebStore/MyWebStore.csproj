@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Account.aspx" />
     <Content Include="Catalog.aspx" />
+    <Content Include="Content\script.js" />
     <Content Include="Content\style.css" />
     <Content Include="Favorites.aspx" />
     <Content Include="Global.asax" />
