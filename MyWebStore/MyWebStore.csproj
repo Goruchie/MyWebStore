@@ -74,8 +74,12 @@
     <Content Include="Favorites.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\clouds.jpg" />
+    <Content Include="Images\cyberWallpaper.jpg" />
+    <Content Include="Images\nebulosaImg.jpg" />
     <Content Include="Images\store.png" />
     <Content Include="Images\user.png" />
+    <Content Include="Images\watchingTV.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
