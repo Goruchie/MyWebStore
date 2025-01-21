@@ -71,6 +71,8 @@
     <Content Include="Catalog.aspx" />
     <Content Include="Content\script.js" />
     <Content Include="Content\style.css" />
+    <Content Include="Detail.aspx" />
+    <Content Include="Explore.aspx" />
     <Content Include="Favorites.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
@@ -96,6 +98,20 @@
     </Compile>
     <Compile Include="Catalog.aspx.designer.cs">
       <DependentUpon>Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Explore.aspx.cs">
+      <DependentUpon>Explore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Explore.aspx.designer.cs">
+      <DependentUpon>Explore.aspx</DependentUpon>
     </Compile>
     <Compile Include="Favorites.aspx.cs">
       <DependentUpon>Favorites.aspx</DependentUpon>

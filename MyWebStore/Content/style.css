@@ -137,3 +137,10 @@ img {
     background-attachment: fixed;
     animation: moveClouds 60s ease-in-out infinite;
 }
+.better {
+    padding: 0 !important;
+}
+.detail-image {
+    max-height: 80vh;  
+    max-width: 25vw;
+}

@@ -17,16 +17,24 @@ namespace MyWebStore
                 switch (currentPage)
                 {
                     case "Catalog":
-                        btnCatalog.CssClass = "nav-link btn active";
                         btnFavorites.CssClass = "nav-link btn";
+                        btnExplore.CssClass = "nav-link btn";
+                        btnCatalog.CssClass = "nav-link btn active";
                         break;
                     case "Favorites":
+                        btnExplore.CssClass = "nav-link btn";
                         btnCatalog.CssClass = "nav-link btn";
                         btnFavorites.CssClass = "nav-link btn active";
+                        break;
+                    case "Explore":
+                        btnCatalog.CssClass = "nav-link btn";
+                        btnFavorites.CssClass = "nav-link btn";
+                        btnExplore.CssClass = "nav-link btn active";
                         break;
                     default:
                         btnCatalog.CssClass = "nav-link btn";
                         btnFavorites.CssClass = "nav-link btn";
+                        btnExplore.CssClass = "nav-link btn";
                         break;
                 }
             }
@@ -40,6 +48,11 @@ namespace MyWebStore
         protected void btnFavorites_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Favorites.aspx");
+        }
+
+        protected void btnExplore_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Explore.aspx");
         }
     }
 }

@@ -7,15 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace MyWebStore
 {
-    public partial class Home : System.Web.UI.Page
+    public partial class Explore : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-        protected void btnLExplore_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Explore.aspx");
         }
     }
 }
