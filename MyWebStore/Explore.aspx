@@ -9,46 +9,26 @@
         </div>
         <div class="mx-auto col container card-cont p-3">
             <div class="duki">
-                <div class="card exp-card" onclick="window.location.href='https://example.com';">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">This is some text below the card title.</p>
-                        <p class="card-text">This is another text below the first one.</p>
-                    </div>
-                </div>
-                <div class="card exp-card" onclick="window.location.href='https://example.com';">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">This is some text below the card title.</p>
-                        <p class="card-text">This is another text below the first one.</p>
-                    </div>
-                </div>
-                <div class="card exp-card" onclick="window.location.href='https://example.com';">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">This is some text below the card title.</p>
-                        <p class="card-text">This is another text below the first one.</p>
-                    </div>
-                </div>
-                <div class="card exp-card" onclick="window.location.href='https://example.com';">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">This is some text below the card title.</p>
-                        <p class="card-text">This is another text below the first one.</p>
-                    </div>
-                </div>
-                <div class="card exp-card" onclick="window.location.href='https://example.com';">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">This is some text below the card title.</p>
-                        <p class="card-text">This is another text below the first one.</p>
-                    </div>
-                </div>
+
+                <asp:Repeater runat="server" ID="repeaterID">
+                    <ItemTemplate>
+
+                       <%-- <img src="<%#Eval("UrlImage") %>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><%#Eval("Name") %></h5>
+                            <p class="card-text"><%#Eval("Description") %></p>--%>
+
+                            <div class="card exp-card" onclick="window.location.href='https://example.com';">
+                                <img src="<%#Eval("UrlImage") %>" class="card-img-top" alt="Card Image">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%#Eval("Name") %></h5>
+                                    <p class="card-text">$<%#Eval("Price") %></p>
+                                    <p class="card-text"><%#Eval("Category") %></p>
+                                </div>
+                            </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+
             </div>
         </div>
     </div>
