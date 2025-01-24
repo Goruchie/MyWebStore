@@ -12,12 +12,6 @@
 
                 <asp:Repeater runat="server" ID="repeaterID">
                     <ItemTemplate>
-
-                       <%-- <img src="<%#Eval("UrlImage") %>" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"><%#Eval("Name") %></h5>
-                            <p class="card-text"><%#Eval("Description") %></p>--%>
-
                             <div class="card exp-card" onclick="window.location.href='https://example.com';">
                                 <img src="<%#Eval("UrlImage") %>" class="card-img-top" alt="Card Image">
                                 <div class="card-body">

@@ -11,17 +11,6 @@ namespace MyWebStore
 {
     public partial class Explore : System.Web.UI.Page
     {
-        //public List<Pokemon> PokeList { get; set; }
-        //protected void Page_Load(object sender, EventArgs e)
-        //{
-        //    PokeServices service = new PokeServices();
-        //    PokeList = service.listIsActiveRequired(false);
-        //    if (!IsPostBack)
-        //    {
-        //        repeaterID.DataSource = PokeList;
-        //        repeaterID.DataBind();
-        //    }
-        //}
         public List<Item> ItemList { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
