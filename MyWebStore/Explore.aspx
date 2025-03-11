@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="d-flex nebulosa row">
         <div class=" col-3 sidebar text-center bg-dark">
-            <h2>Filter by:</h2>
+            <h2>Filter by</h2>
         </div>
         <div class="mx-auto col container card-cont p-3">
             <div class="duki">
